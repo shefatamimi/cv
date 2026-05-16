@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "606981286699",
+    "project_id": "cvfirapp2026",
+    "storage_bucket": "cvfirapp2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606981286699:android:57930d007468a490e8b36e",
+        "android_client_info": {
+          "package_name": "com.example.cvfirpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjVo85kdZEft0BewUbVcbFSVu42UoF_90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606981286699:android:614f674d5a4a426be8b36e",
+        "android_client_info": {
+          "package_name": "com.example.note"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjVo85kdZEft0BewUbVcbFSVu42UoF_90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
