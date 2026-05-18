@@ -12,16 +12,22 @@ class CreateCvScreen extends StatefulWidget {
 class _CreateCvScreenState extends State<CreateCvScreen>{
   File? _image;
   final picker =   ImagePicker();
-  Future <void> getImage() async {
-    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
-    setState(() {
-      if (pickedFile != _image) {
+  Future<void> getImage() async {
+    final pickedFile = await picker.pickImage(
+      source: ImageSource.gallery,
+    );
 
-        _image = File(pickedFile!.path);
-      } else {
-        print('No image selected.');
-      }
-    });
+    if (pickedFile != null) {
+      setState(() {
+        _image = File(pickedFile.path);
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Image selected')),
+      );
+    } else {
+      print('No image selected.');
+    }
   }
 
   @override
@@ -43,18 +49,20 @@ class _CreateCvScreenState extends State<CreateCvScreen>{
               const SizedBox(height: 25),
              InkWell(
                onTap: (){
-                 getImage(
-                 );
+                 getImage();
                },
                child:
              CircleAvatar(
                radius: 60,
                backgroundColor: Colors.grey[200],
-               child: Icon(
+               backgroundImage: _image != null ? FileImage(_image!) : null,
+               child:
+                   _image==null ?
+               Icon(
                  Icons.camera_alt,
                  size: 70,
                  color: Colors.blueGrey,
-               ),
+               ):null,
              ),
              ),
               const SizedBox(height: 9),
