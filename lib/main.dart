@@ -1,3 +1,4 @@
+import 'package:cvfirpro/auth/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -22,11 +23,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: Colors.deepOrangeAccent,
         ),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'CV Home'),
+      home: LoginScreen()
     );
   }
 }
