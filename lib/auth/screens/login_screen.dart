@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               children: [
                 const SizedBox(height:10),
-                const Icon(Icons.contact_page, size: 120,color: Colors.deepOrangeAccent,),
+                const Icon(Icons.assignment, size: 120,color: Colors.blueGrey,),
                 const SizedBox(height:10),
                 const Text('Welcome Back!', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 5,),
@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Padding(
                   padding: EdgeInsets.only(left: 215,top: 7),
                   child: InkWell(child: Text('Forgot Password?',
-                      style: TextStyle(color: Colors.deepOrangeAccent, fontSize: 12, fontWeight: FontWeight.bold))
+                      style: TextStyle(color: Colors.blueGrey, fontSize: 12, fontWeight: FontWeight.bold))
                   ),
 
                 ),
@@ -76,11 +76,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 }, child: const Text('Login', style: TextStyle(fontSize: 37, fontWeight: FontWeight.bold)),
                 style: ElevatedButton.styleFrom(
                   minimumSize:  Size(250, 30),
-                  backgroundColor: Colors.deepOrangeAccent,
+                  backgroundColor: Colors.blueGrey,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
 
-                    borderRadius: BorderRadius.circular(50),
+                    borderRadius: BorderRadius.circular(10),
                   ),
             )
           ),
@@ -110,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                         shape: RoundedRectangleBorder(
 
-                          borderRadius: BorderRadius.circular(50),
+                          borderRadius: BorderRadius.circular(10),
                           side: const BorderSide(color: Colors.black45)
                         )
                       ),
@@ -139,7 +139,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> const RegesterScreen()));
                       },
-                      child: Text('Sign Up', style: TextStyle(color: Colors.deepOrangeAccent, fontWeight: FontWeight.bold),),
+                      child: Text('Sign Up', style: TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold),),
                     )
                   ],)
 

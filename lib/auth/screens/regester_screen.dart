@@ -13,7 +13,7 @@ class _RegesterScreenState extends State<RegesterScreen> {
     return Scaffold(
       appBar: AppBar(
         foregroundColor: Colors.white,
-        backgroundColor: Colors.deepOrangeAccent,
+        backgroundColor: Colors.blueGrey,
         title: const Text(
           'Register',
           style: TextStyle(color: Colors.white),
@@ -27,23 +27,24 @@ class _RegesterScreenState extends State<RegesterScreen> {
               const SizedBox(height: 25),
 
               const Icon(
-                Icons.contact_page,
+                Icons.person_add_alt_1_rounded,
                 size: 120,
-                color: Colors.deepOrangeAccent,
+                color: Colors.blueGrey,
               ),
 
               const SizedBox(height: 10),
 
-              const Text(
-                'Welcome',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
+
 
               const SizedBox(height: 5),
 
               const Text(
-                'Create your account',
-                style: TextStyle(fontSize: 16),
+                'Create Your Account',
+
+                style: TextStyle(fontSize: 20,
+
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey),
               ),
 
               const SizedBox(height: 30),
@@ -105,10 +106,10 @@ class _RegesterScreenState extends State<RegesterScreen> {
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(250, 50),
-                  backgroundColor: Colors.deepOrangeAccent,
+                  backgroundColor: Colors.blueGrey,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
+                    borderRadius: BorderRadius.circular(10),
                     side: const BorderSide(color: Colors.black38),
                   ),
                 ),
@@ -135,7 +136,7 @@ class _RegesterScreenState extends State<RegesterScreen> {
                     child: const Text(
                       "Login",
                       style: TextStyle(
-                        color: Colors.deepOrangeAccent,
+                        color: Colors.blueGrey,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
